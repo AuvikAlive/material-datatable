@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <script src="js/mui.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <form class="mui-form" onsubmit="addRow(event)" id="addRowForm">
+      <legend id="formTitle">Add Exercise</legend>
+      <div class="mui-textfield">
+        <input type="text" id="name" placeholder="name of the exercise" required>
+        <label>Name</label>
+      </div>
+
+      <div class="mui-textfield">
+        <input type="text" id="reps" placeholder="number of times the exercise was performed" required>
+        <label>Reps</label>
+      </div>
+
+      <div class="mui-textfield">
+        <input type="text" id="date" placeholder="weight of the weights used" required>
+        <label>Weight</label>
+      </div>
+
+      <div class="mui-textfield">
+        <input type="text" id="weight" placeholder="date the exercise was performed" required>
+        <label>Date</label>
+      </div>
+
+      <div class="mui-textfield">
+        <input type="text" id="lbs" placeholder="1 indicates lbs, 0 indicates kgs" required>
+        <label>lbs</label>
+      </div>
+
+      <button type="submit" class="mui-btn mui-btn--raised" class="add" value="Add Row">Submit</button>
+    </form>
+
+    <table class="mui-table mui-table--bordered" id="data_table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Reps</th>
+          <th>Weight</th>
+          <th>Date</th>
+          <th>lbs</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
